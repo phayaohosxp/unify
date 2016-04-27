@@ -7,9 +7,22 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
 
-AppAsset::register($this);
+
+use app\assets\MaterialAsset;
+
+MaterialAsset::register($this);
+
+
+#use app\assets\BasicAsset;
+
+#BasicAsset::register($this);
+
+#use app\assets\AppAsset;
+
+#AppAsset::register($this);
+
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -30,7 +43,7 @@ AppAsset::register($this);
         'brandLabel' => 'My Company',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-warning navbar-fixed-top',
         ],
     ]);
     echo Nav::widget([

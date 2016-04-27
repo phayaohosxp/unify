@@ -32,16 +32,27 @@ class FirstController extends \yii\web\Controller {
         ]);
     }
 
- 
     public function actionPage3() {
-        
-        
-        
+
+
+
         return $this->render('page3', [
-            
-            
         ]);
     }
-    
-    
+
+    public function actionPage4( $xname = null,
+        $yname = null) {
+
+           
+        $fname = $xname;
+        $lname = $yname;
+        $name = $fname . "   " . $lname;
+
+        
+        
+        return $this->render('page4', [
+                    'name' => $name,
+        ]);
+    }
+
 }
