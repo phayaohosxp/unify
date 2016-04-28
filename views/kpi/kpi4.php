@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 echo GridView::widget([
                     'dataProvider' => $dataProvider,
                     'resizableColumns' => true,
+                    'bordered' => true,
                      'summary' => '',
                     'responsive' => true,
                     'hover' => true,

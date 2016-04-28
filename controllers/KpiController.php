@@ -45,6 +45,7 @@ where d.byear = 2559";
         } catch (\yii\db\Exception $e) {
             throw new \yii\web\ConflictHttpException('sql error');
         }
+        
         $dataProvider = new \yii\data\ArrayDataProvider([
             'allModels' => $rawData,
             'pagination' => [

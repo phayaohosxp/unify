@@ -46,6 +46,7 @@ MaterialAsset::register($this);
                             ['label' => 'My first page', 'url' => ['/first/index']],
                             ['label' => 'KPI System Menu', 'url' => ['/kpi/index']],
                         ]],
+                      ['label' => 'Highchart', 'url' => ['/chart/index']],
                     ['label' => 'เกี่ยวกับ', 'url' => ['/site/about']],
                     ['label' => 'ติดต่อเรา', 'url' => ['/site/contact']],
                     Yii::$app->user->isGuest ? (
