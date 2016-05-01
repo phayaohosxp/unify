@@ -1,25 +1,23 @@
 <?php
-
-namespace app\assets;
-
+/**
+ * @author Semenov Alexander <semenov@skeeks.com>
+ * @link http://skeeks.com/
+ * @copyright 2010 SkeekS (СкикС)
+ * @date 25.02.2016
+ */
+namespace skeeks\template\unify;
 use yii\web\AssetBundle;
 
-class MaterialAsset extends AssetBundle {
-
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
-    public $css = [
-        'css/site.css',
-        'material/css/material.min.css',
-        'material/css/ripples.min.css',
-    ];
-    public $js = [
-        'material/js/material.js',
-        'material/js/ripples.minl.js',
-    ];
-    public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-    ];
-
+class UnifyAsset extends AssetBundle
+{
+    public $sourcePath = '@skeeks/template/unify/src/web/assets/';
+    /**
+     * @param string $asset
+     * @return string
+     * @throws \yii\base\InvalidConfigException
+     */
+    static public function getAssetUrl($asset)
+    {
+        return \Yii::$app->assetManager->getAssetUrl(\Yii::$app->assetManager->getBundle(static::className()), $asset);
+    }
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4e52681d709726d482eb7b393b29bfe",
-    "content-hash": "203fdea2b8c51d4dbff492744d34e625",
+    "hash": "2cc747848229b7949ea57662b2bec707",
+    "content-hash": "884aa4af2109c8fd4dd3c28cfce89169",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -1699,6 +1699,49 @@
                 "pdf"
             ],
             "time": "2015-11-30 10:53:14"
+        },
+        {
+            "name": "skeeks/yii2-template-unify",
+            "version": "1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/skeeks-com/yii2-template-unify.git",
+                "reference": "10999399eea609b574751b34d2f051cc3fd82958"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/skeeks-com/yii2-template-unify/zipball/10999399eea609b574751b34d2f051cc3fd82958",
+                "reference": "10999399eea609b574751b34d2f051cc3fd82958",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "skeeks\\template\\unify\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Semenov Alexander",
+                    "email": "semenov@skeeks.com"
+                }
+            ],
+            "description": "Template unify bootstrap",
+            "homepage": "http://skeeks.com/",
+            "keywords": [
+                "bootstrap",
+                "template",
+                "unify",
+                "yii2"
+            ],
+            "time": "2016-02-26 18:09:09"
         },
         {
             "name": "swiftmailer/swiftmailer",

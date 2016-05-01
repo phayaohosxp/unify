@@ -7,6 +7,7 @@ $this->params['breadcrumbs'][] = $this->title;
 $link1 = Yii::$app->urlManager->createUrl([ 'chart/chart1']);
 $link2 = Yii::$app->urlManager->createUrl([ 'chart/chart2']);
 $link3 = Yii::$app->urlManager->createUrl([ 'chart/chart3']);
+$link4 = Yii::$app->urlManager->createUrl([ 'chart/chart4']);
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -20,6 +21,7 @@ $link3 = Yii::$app->urlManager->createUrl([ 'chart/chart3']);
             <a href =  "<?php echo $link1; ?>" ">กราฟ column Hightchart </a>  <hr>
             <a href =  "<?php echo $link2; ?>" ">กราฟ combine Higtchart </a>  <hr>
             <a href =  "<?php echo $link3; ?>" ">กราฟ คอลัมน์ จาก Database  </a>  <hr>
+            <a href =  "<?php echo $link4; ?>" ">กราฟ คอลัมน์ จาก Database  Chart4  </a>  <hr>
 
 
         </div>

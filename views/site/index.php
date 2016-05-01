@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use miloschuman\highcharts\Highcharts;
 
-$this->title = 'จำนวน Error จาก HDC เขตสุขภาพที่ 1 ';
+$this->title = 'Yii2 Framework';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -16,5 +16,13 @@ $this->params['breadcrumbs'][] = $this->title;
     ]);
     ?>
 </div>
- 
 
+
+<div class="container content">
+
+</div> 
+
+
+
+</body>
+</html>
